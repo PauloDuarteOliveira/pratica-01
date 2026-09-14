@@ -5,73 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPCA - Ensino Superior Público - Barcelos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logotipo">
-            <img src="UPCA.svg" alt="Logótipo do UPCA">
-        </div>
-        <form action="" method="get">
-            <label for="busca"></label>
-            <input type="search" id="busca">
-            <button type="submit"> Enviar</button>
-        </form>
+    <header class="header">
+        <h1 class="titulo titulo2" id="tituloId">
+            IPCA - Ensino Superior Público - Barcelos
+        </h1>
+        <div class="header-container">
+            <div>
+                <img class="logotipo" src="UPCA.svg" alt="Logótipo do UPCA">
+            </div>
+            <div class="form-nav-container">
+                <form action="" method="get">
+                    <label for="busca"></label>
+                    <input type="search" id="busca">
+                    <button type="submit"> Enviar</button>
+                </form>
 
-        <nav class="navigation">
-            <ul class="nav-links">
-                <!-- Level 1 Main Item -->
-                <li class="has-dropdown">
-                    Estudar
-                    <!-- Level 2 Dropdown -->
-                    <ul class="dropdown-menu1">
-                        <!-- Level 2 Sub-item with its own dropdown -->
-                        <li class="has-submenu">
-                            Cursos &raquo;
-                            <!-- Level 3 Sub-Dropdown (The Cursos subclasses) -->
-                            <ul class="submenu1-1">
-                                <li><a href="#">Tesp</a></li>
-                                <li><a href="#">Licenciatura</a></li>
-                                <li><a href="#">Pós-Graduações</a></li>
-                                <li><a href="#">Mestrados</a></li>
-                                <li><a href="#">Mestrados Profissionais</a></li>
-                                <li><a href="#">Doutoramentos</a></li>
+                <!--<div>
+                    <a href="www.google.pt" target="_blank">Google</a>
+                </div> -->
+
+                <nav class="navigation">
+                    <a class="nav-links">
+                        <!-- Level 1 Main Item -->
+                        <li class="has-dropdown">
+                            Estudar
+                            <!-- Level 2 Dropdown -->
+                            <ul class="dropdown-menu1">
+                                <!-- Level 2 Sub-item with its own dropdown -->
+                                <li class="has-submenu">
+                                    Cursos
+                                    <!-- Level 3 Sub-Dropdown (The Cursos subclasses) -->
+                                    <ul class="submenu">
+                                        <li><a href="#">Tesp</a></li>
+                                        <li><a href="#">Licenciatura</a></li>
+                                        <li><a href="#">Pós-Graduações</a></li>
+                                        <li><a href="#">Mestrados</a></li>
+                                        <li><a href="#">Mestrados Profissionais</a></li>
+                                        <li><a href="#">Doutoramentos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    +Formação
+                                    <ul class="submenu">
+                                        <li><a href="#">SKILLS BOOST</a></li>
+                                        <li><a href="#">Cursos Breves PRR</a></li>
+                                        <li><a href="#">Cursos Lider + Digital</a></li>
+                                        <li><a href="#">Microcredenciais</a></li>
+                                        <li><a href="#">UCs Isoladas</a></li>
+                                        <li><a href="#">Centro de Liguas - UPCA</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Candidaturas</a></li>
+                                <li><a href="#">Informação Académica</a></li>
+                                <li><a href="#">Provedor do estudante</a></li>
+                                <li><a href="#">Biblioteca</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">+Formação</a></li>
-                        <li><a href="#">Candidaturas</a></li>
-                        <li><a href="#">Informação Académica</a></li>
-                        <li><a href="#">Provedor do estudante</a></li>
-                        <li><a href="#">Biblioteca</a></li>
-                    </ul>
-                </li>
 
-                <!-- Another Level 1 Main Item -->
-                <li class="has-dropdown">
-                    I&D+I
-                    <ul class="dropdown-menu2">
-                        <li><a href="#">Ecossistema de I&D</a></li>
-                        <li><a href="#">Portal do Conhecimento</a></li>
-                        <li><a href="#">Repositório Científico</a></li>
-                        <li><a href="#">Empreendedorismo</a></li>
-                    </ul>
-                </li>
-                <li class="has-dropdown">
-                    Internacional
-                    <ul class="dropdown-menu3">
-                        <li><a href="#">Estudar na UPCA</a></li>
-                        <li><a href="#">Mobilidade</a></li>
-                        <li><a href="#">Universidade Europeia: RUN-EU</a></li>
-                        <li><a href="#">Estudantes Internacionais</a></li>
-                        <li><a href="#">Programas e Parcerias Internacionais</a></li>
-                    </ul>
-                </li>
-                <li>Viver</li>
-                <li>UPCA</li>
-            </ul>
-        </nav>
+                        <!-- Another Level 1 Main Item -->
+                        <li class="has-dropdown">
+                            I&D+I
+                            <ul class="dropdown-menu2">
+                                <li><a href="#">Ecossistema de I&D</a></li>
+                                <li><a href="#">Portal do Conhecimento</a></li>
+                                <li><a href="#">Repositório Científico</a></li>
+                                <li><a href="#">Empreendedorismo</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            Internacional
+                            <ul class="dropdown-menu3">
+                                <li><a href="#">Estudar na UPCA</a></li>
+                                <li><a href="#">Mobilidade</a></li>
+                                <li><a href="#">Universidade Europeia: RUN-EU</a></li>
+                                <li><a href="#">Estudantes Internacionais</a></li>
+                                <li><a href="#">Programas e Parcerias Internacionais</a></li>
+                            </ul>
+                        </li>
+                        <li>Viver</li>
+                        <li>UPCA</li>
+                    </a>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <article>
+            
+        </article>
+    </main>
 </body>
 
 
